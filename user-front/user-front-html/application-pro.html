@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>申し込み手続き</title>
+<script type="text/javascript"></script>
+</head>
+
+<body>
+	<header>
+		<div>
+			<input type="image" src="../user-front-image/logo.png">
+		</div>
+		<div>
+			<a href="">ログイン</a>
+		</div>
+		<div>
+			<a href="../user-front-html/mypage.html">マイページ</a>
+		</div>
+	</header>
+
+	<main>
+		<div class="headerThema">
+			申し込み手続き
+			<hr />
+		</div>
+
+		<div class="proccessThema">
+			<div>お支払い方法選択</div>
+			<div>
+				<input type="image" src="../user-front-image/sannkakei.png">
+			</div>
+			<div>申し込み内容確認</div>
+			<div>
+				<input type="image" src="../user-front-image/sannkakei.png">
+			</div>
+			<div>申し込み完了</div>
+		</div>
+
+		<!-- 图像位置文字栏目&课程图像 -->
+		<div>
+			<div>
+				<input type="image" src="../user-front-image/lecture1.jpg">
+			</div>
+			<div>
+				<ul>
+					<!-- showTime -->
+					<li></li>
+					<!-- lectureName -->
+					<li class="wideChar"></li>
+					<!-- lecturePrice -->
+					<li class="wideChar"></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 最下面文字栏 -->
+		<div>
+			<div>お支払い方法</div>
+			<!-- 選択した具体的な決済方法を記載 -->
+			<div></div>
+		</div>
+		<!-- bottom -->
+		<div>
+			<button type="button" onclick="backTo()">戻る</button>
+			<button type="button" onclick="nextPage()">確認画面へ</button>
+		</div>
+	</main>
+
+	<footer>
+		<small>作成者：マクドナルド</small>
+	</footer>
+	
+	<script type="text/javascript">
+		function backTo(){
+			window.open("../user-front-html/charge-method.html");
+		}
+		
+		function nextPage(){
+			window.open("../user-front-html/application-over.html");
+		}
+	</script>
+</body>
+</html>
